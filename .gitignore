@@ -1,0 +1,114 @@
+# =============================================================
+#  SpendWise – Root .gitignore
+# =============================================================
+
+# ───────────────────────── OS FILES ──────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ──────────────────────── IDE / EDITORS ──────────────────────
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/nbdist/
+.nb-gradle/
+
+# STS / Spring Tool Suite
+.sts4-cache/
+
+# ─────────────────────── JAVA / MAVEN ────────────────────────
+backend/target/
+backend/*.class
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/hs_err_pid*
+backend/.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.properties
+
+# ──────────────────── NODE / NPM / PNPM ──────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.npm/
+frontend/.eslintcache
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Vite
+frontend/.vite/
+frontend/vite.config.js.timestamp-*
+
+# ─────────────────────── ENVIRONMENT FILES ───────────────────
+# NEVER commit real secrets – use .env.example instead
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-secret.properties
+
+# ─────────────────────── LOGS ────────────────────────────────
+logs/
+*.log
+*.log.*
+spring.log
+
+# ─────────────────────── DATABASE ────────────────────────────
+# Do NOT ignore schema.sql or sample_data.sql — they are version-controlled
+*.sql.bak
+*.dump
+*.backup
+
+# ─────────────────────── BUILD ARTIFACTS ─────────────────────
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ─────────────────────── MISC ────────────────────────────────
+*.swp
+*.swo
+*~
+.sass-cache/
+connect.lock
+coverage/
+libpeerconnection.log
+testem.log
+typings/

@@ -1,0 +1,29 @@
+# Maven build output
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Local overrides with real credentials — NEVER commit these
+# application.properties IS committed (uses env-var placeholders, no real secrets)
+src/main/resources/application-local.properties
+src/main/resources/application-secret.properties
+
+# Log files
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
